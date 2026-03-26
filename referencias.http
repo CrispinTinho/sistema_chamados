@@ -1,0 +1,41 @@
+###
+    
+
+GET http://localhost:3000/usuarios 
+
+
+
+###
+
+
+
+POST http://localhost:3000/chamados
+Content-Type: application/json
+
+{
+    "nome": "pikachu",
+    "senha": "1234",
+    "email": "pikachu22@gmail.com"
+}
+
+
+###
+
+
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "nome": "gairo",
+    "senha": "1234",
+    "email": "gairo@gmail.com"
+}
+
+
+###
+
+
+DELETE  http://localhost:3000/usuarios/1
+
+
+###

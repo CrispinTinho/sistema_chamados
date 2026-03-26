@@ -1,0 +1,42 @@
+Para clonar o repositório: 
+git clone control + shift + V ( link do GitHub )
+
+Abrir a pasta do repositório: 
+File > Open Folder > ( selecione a pasta do repositório )
+
+Criar um arquivo chamado: "server.js"
+
+File > Auto Save 
+
+Abrir o Terminal:
+Control + '
+
+Iniciar o node:
+npm init -y
+
+Dentro do arquivo package.json:
+"type": "module",
+
+dentro de scripts:
+"start": "node --watch server.js"
+
+Insytalar as dependencias:
+npm i fastify 
+e 
+npm i pg
+
+COMANDOS 
+Copy Line Down: Shift+Alt+DownArrow (duplica para baixo o codigo selecionado)
+Pesquisar 'algo' no codigo: Ctrl + f 
+Abrir o Terminal: Control + '
+Organizar o codigo: Shift+Alt+F 
+Procurar e trocar: Ctrl + h 
+
+Para colocar no github:
+( LEMBRE-SE DE CRIAR O .gitignore e colocar node_modules/ para que essa pasta não seja commitada )
+
+git add .
+
+git commit -m"mensagem do commit"
+
+git push
