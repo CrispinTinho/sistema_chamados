@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feliperdesousa/sistema_chamados.git"
+    "url": "git+https://github.com/CrispinTinho/sistema_chamados.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/feliperdesousa/sistema_chamados/issues"
+    "url": "https://github.com/CrispinTinho/sistema_chamados.git"
   },
-  "homepage": "https://github.com/feliperdesousa/sistema_chamados#readme",
+  "homepage": "https://github.com/CrispinTinho/sistema_chamados.git",
   "dependencies": {
     "fastify": "^5.8.4",
     "pg": "^8.20.0"
