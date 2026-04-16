@@ -1,41 +1,73 @@
 ###
-    
-
-GET http://localhost:3000/usuarios 
-
+GET http://localhost:3000/usuarios
 
 
 ###
-
-
-
-POST http://localhost:3000/chamados
+POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome": "pikachu",
-    "senha": "1234",
-    "email": "pikachu22@gmail.com"
+ "nome": "Lucas",
+ "email": "lucas@example.com",
+ "senha": "1234"
 }
 
 
 ###
-
-
 PUT http://localhost:3000/usuarios/1
 Content-Type: application/json
 
 {
-    "nome": "gairo",
-    "senha": "1234",
-    "email": "gairo@gmail.com"
+ "nome": "João",
+ "email": "joao@example.com",
+ "senha": "1234"
 }
 
 
 ###
+DELETE http://localhost:3000/usuarios/1
 
+//⬆️Usuarios⬆️---------😎👍----------⬇️chamados⬇️
 
-DELETE  http://localhost:3000/usuarios/1
+###
+GET http://localhost:3000/chamados
 
 
 ###
+GET http://localhost:3000/chamados/1
+
+
+###
+POST http://localhost:3000/chamados
+Content-Type: application/json
+
+{
+ "titulo": "Problema com o computador",
+ "descricao": "O computador não está ligando",
+ "responsavel_id": 1
+}
+
+
+###
+POST http://localhost:3000/procurar/chamados
+Content-Type: application/json
+
+{
+ "responsavel_id": 1
+}
+
+
+###
+PUT http://localhost:3000/chamados/1
+Content-Type: application/json
+
+{
+ "titulo": "Problema com o computador",
+ "descricao": "O computador está ligando",
+ "status_chamado": "Em andamento",
+ "responsavel_id": 1
+}
+
+
+###
+DELETE http://localhost:3000/chamados/1

@@ -1,16 +1,21 @@
-CREATE TABLE usuario (
+CREATE TABLE usuarios (
   id serial primary key,
-  nome varchar(255),
-  email varchar(255) not null unique,
-  senha varchar(255),
+  nome varchar(255) not null,
+  email varchar(255) unique not null,
+  senha varchar(255) not null,
   criado_em timestamp default current_timestamp
 );
 
-CREATE TABLE chamado (
+CREATE TABLE chamados (
   id serial primary key,
   titulo varchar(255) not null,
-  descricao text,
-  status varchar(50) default 'aberto',
+  descricao varchar(1000) not null,
+  status_chamado varchar(255) default 'aberto',
+  responsavel_id int not null,
   criado_em timestamp default current_timestamp,
-  responsavel_id integer not null references usuario(id) on delete cascade
+
+  constraint fk_responsavel
+  foreign key (responsavel_id)
+  references usuarios(id)
+  on delete cascade
 );
